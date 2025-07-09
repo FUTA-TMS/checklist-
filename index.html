@@ -14,25 +14,29 @@
     align-items: center;
     font-family: sans-serif;
     padding: 20px;
+    font-size: 0.9em;
   }
   .outer-card {
     background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
-    padding: 25px;
-    border-radius: 20px;
+    padding: 60px;
+    border-radius: 10px;
     box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .inner-card {
     background: #fff;
-    padding: 30px 25px;
-    border-radius: 15px;
+    padding: 25px 20px;
+    border-radius: 6px;
     width: 100%;
-    max-width: 400px;
+    max-width: 360px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
     text-align: center;
   }
   h2 {
-    margin-bottom: 20px;
-    font-size: 1.1em;
+    margin-bottom: 15px;
+    font-size: 0.95em;
     font-weight: bold;
   }
   ul {
@@ -44,34 +48,41 @@
   li {
     display: flex;
     align-items: center;
-    margin: 10px 0;
-    font-size: 0.95em;
+    margin: 8px 0;
+    font-size: 0.85em;
     line-height: 1.4;
     word-break: break-word;
   }
+  .divider {
+    border-top: 1px solid #ddd;
+    margin: 12px 0;
+  }
   input[type="checkbox"] {
-    width: 18px;
-    height: 18px;
-    margin-right: 10px;
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
     flex-shrink: 0;
   }
   p {
-    font-size: 0.75em;
+    font-size: 0.6em;
     color: #666;
-    margin-top: 20px;
+    margin-top: 15px;
   }
 </style>
 </head>
 <body>
   <div class="outer-card">
     <div class="inner-card">
-      <h2>✅ イベント設定・ラウンド設定の確認</h2>
+      <h2>イベント設定・ラウンド設定の確認</h2>
       <ul>
         <li><input type="checkbox">トーナメントの参加部門設定は正しいですか？</li>
         <li><input type="checkbox">ラウンドの日程・会場設定は正しいですか？</li>
         <li><input type="checkbox">イベント名・開催日程は正しく設定されていますか？</li>
         <li><input type="checkbox">トーナメントの参加部門設定は正しいですか？</li>
         <li><input type="checkbox">ラウンドの日程・会場設定は正しいですか？</li>
+      </ul>
+      <div class="divider"></div>
+      <ul>
         <li><input type="checkbox">カットラインの設定は正しいですか？（必要時）</li>
         <li><input type="checkbox">タイブレークの設定は正しいですか？（必要時）</li>
       </ul>
