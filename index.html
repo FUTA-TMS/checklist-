@@ -1,90 +1,82 @@
+
 <!DOCTYPE html>
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>イベント設定・ラウンド設定の確認</title>
+<title>TMS 最終確認リスト</title>
 <style>
-  body {
-    margin: 0;
-    min-height: 100vh;
-    background: #ffffff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: sans-serif;
-    padding: 20px;
-    font-size: 0.9em;
-  }
-  .outer-card {
-    background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
-    padding: 60px;
-    border-radius: 10px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .inner-card {
-    background: #fff;
-    padding: 25px 20px;
-    border-radius: 6px;
-    width: 100%;
-    max-width: 360px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    text-align: center;
-  }
-  h2 {
-    margin-bottom: 15px;
-    font-size: 0.95em;
-    font-weight: bold;
-  }
-  ul {
-    list-style: none;
-    padding: 0;
-    text-align: left;
-    margin: 0;
-  }
-  li {
-    display: flex;
-    align-items: center;
-    margin: 8px 0;
-    font-size: 0.85em;
-    line-height: 1.4;
-    word-break: break-word;
-  }
-  .divider {
-    border-top: 1px solid #ddd;
-    margin: 12px 0;
-  }
-  input[type="checkbox"] {
-    width: 16px;
-    height: 16px;
-    margin-right: 8px;
-    flex-shrink: 0;
-  }
-  p {
-    font-size: 0.6em;
-    color: #666;
-    margin-top: 15px;
-  }
+  body {margin:0;min-height:100vh;background:#ffffff;display:flex;justify-content:center;align-items:center;font-family:sans-serif;padding:20px;font-size:0.9em;}
+  .outer-card {background:linear-gradient(135deg,#f6d365 0%,#fda085 100%);padding:40px;border-radius:10px;box-shadow:0 10px 25px rgba(0,0,0,0.15);}
+  .inner-card {background:#fff;padding:25px 20px;border-radius:6px;width:100%;max-width:420px;box-shadow:0 5px 15px rgba(0,0,0,0.1);}
+  h2 {margin-bottom:15px;font-size:1.3em;font-weight:bold;text-align:center;}
+  h3 {margin:15px 0 8px 0;font-size:1em;font-weight:bold;text-align:left;}
+  ul {list-style:none;padding:0;text-align:left;margin:0;}
+  li {display:flex;align-items:center;margin:6px 0;font-size:0.88em;line-height:1.4;word-break:break-word;}
+  input[type="checkbox"] {width:18px;height:18px;margin-right:8px;flex-shrink:0;vertical-align:middle;}
+  .divider {border-top:1px solid #ddd;margin:12px 0;}
+  p {font-size:0.65em;color:#666;margin-top:15px;text-align:center;}
 </style>
 </head>
 <body>
   <div class="outer-card">
     <div class="inner-card">
-      <h2>イベント設定・ラウンド設定の確認</h2>
+      <h2>TMS 最終確認リスト</h2>
+
+      <h3>【イベント全体】</h3>
       <ul>
-        <li><input type="checkbox">イベント（ラウンド）の開催日は正しいですか？</li>
-        <li><input type="checkbox">ゴルフ場は正しく設定されていますか？</li>
-        <li><input type="checkbox">選手の部門への振り分けは正しく設定されていますか？</li>
-        <li><input type="checkbox">トーナメントの参加部門設定は正しいですか？</li>
+        <li><input type="checkbox">各ラウンドの開催日は正しいですか？</li>
       </ul>
       <div class="divider"></div>
+
+      <h3>【ゴルフ場】</h3>
       <ul>
-        <li><input type="checkbox">カットラインの設定は正しいですか？（必要時）</li>
-        <li><input type="checkbox">タイブレークの設定は正しいですか？（必要時）</li>
+        <li><input type="checkbox">正しいゴルフ場が設定されていますか？</li>
+        <li><input type="checkbox">各ホールのパー設定は正しいですか？</li>
       </ul>
+      <div class="divider"></div>
+
+      <h3>【トーナメント設定】</h3>
+      <ul>
+        <li><input type="checkbox">選手の部門への振り分けは完了していますか？</li>
+        <li><input type="checkbox">参加部門設定は正しいですか？</li>
+        <li><input type="checkbox">各トーナメント形式は正しいですか？</li>
+        <li><input type="checkbox">タイブレーク設定は正しいですか？（必要時）</li>
+        <li><input type="checkbox">カットライン設定は正しいですか？（必要時）</li>
+      </ul>
+      <div class="divider"></div>
+
+      <h3>【ポータル】</h3>
+      <ul>
+        <li><input type="checkbox">スタート表の公開設定・準備は完了していますか？</li>
+        <li><input type="checkbox">リーダーボードの公開設定・準備は完了していますか？</li>
+        <li><input type="checkbox">リーダーボードに表示する項目は正しいですか？</li>
+      </ul>
+      <div class="divider"></div>
+
+      <h3>【ライブスコア運用時】</h3>
+      <ul>
+        <li><input type="checkbox">GGID一覧は確認済みですか？</li>
+        <li><input type="checkbox">GGID配布方法は準備できていますか？</li>
+      </ul>
+      <div class="divider"></div>
+
+      <h3>【レポート印刷】</h3>
+      <ul>
+        <li><input type="checkbox">組み合わせ表（スタッフ用・フリガナ/チェックボックス付き）</li>
+        <li><input type="checkbox">組み合わせ表（掲示用・1日競技）</li>
+        <li><input type="checkbox">組み合わせ表（掲示用・複数日競技）</li>
+        <li><input type="checkbox">スコアカード（個人用・グロス）</li>
+        <li><input type="checkbox">スコアカード（個人用・ネット）</li>
+        <li><input type="checkbox">スコアカード（4人用・グロス）</li>
+        <li><input type="checkbox">スコアカード（4人用・ネット）</li>
+        <li><input type="checkbox">ホールロケーション表（配布用）</li>
+        <li><input type="checkbox">タイムパー表（配布用・個人用）</li>
+        <li><input type="checkbox">ホールロケーション＋タイムパー（統合版）</li>
+        <li><input type="checkbox">Raguzzi Chart（スタッフ用）</li>
+        <li><input type="checkbox">GGID一覧（ライブスコア利用時）</li>
+      </ul>
+
       <p>※ ページをリロードするとチェックはリセットされます。</p>
     </div>
   </div>
