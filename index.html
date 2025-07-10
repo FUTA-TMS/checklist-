@@ -6,17 +6,88 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>TMS 最終確認リスト</title>
 <style>
-  body {margin:0;min-height:100vh;background:#ffffff;display:flex;justify-content:center;align-items:center;font-family:sans-serif;padding:20px;font-size:0.9em;}
-  .outer-card {background:linear-gradient(135deg,#f6d365 0%,#fda085 100%);padding:60px 50px;border-radius:12px;box-shadow:0 10px 25px rgba(0,0,0,0.15);
-               display:flex;justify-content:center;}  /* 内側センター合わせ追加 */
-  .inner-card {background:#fff;padding:25px 20px;border-radius:8px;width:100%;max-width:440px;box-shadow:0 5px 15px rgba(0,0,0,0.1);}
-  h2 {margin-bottom:15px;font-size:1.4em;font-weight:bold;text-align:center;}
-  h3 {margin:15px 0 8px 0;font-size:1em;font-weight:bold;text-align:left;}
-  ul {list-style:none;padding:0;text-align:left;margin:0;}
-  li {display:flex;align-items:center;margin:6px 0;font-size:0.88em;line-height:1.4;word-break:break-word;}
-  input[type="checkbox"] {width:18px;height:18px;margin-right:8px;flex-shrink:0;vertical-align:middle;}
-  .divider {border-top:1px solid #ddd;margin:12px 0;}
-  p {font-size:0.65em;color:#666;margin-top:15px;text-align:center;}
+  body {
+    margin: 0;
+    min-height: 100vh;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    padding: 20px;
+    font-size: 0.9em;
+  }
+  .outer-card {
+    background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+    padding: 50px 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 480px;
+  }
+  .inner-card {
+    background: #fff;
+    padding: 25px 20px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  }
+  h2 {
+    margin-bottom: 15px;
+    font-size: 1.4em;
+    font-weight: bold;
+    text-align: center;
+  }
+  h3 {
+    margin: 15px 0 8px 0;
+    font-size: 1em;
+    font-weight: bold;
+    text-align: left;
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    margin: 0;
+  }
+  li {
+    display: flex;
+    align-items: center;
+    margin: 6px 0;
+    font-size: 0.88em;
+    line-height: 1.4;
+    word-break: break-word;
+  }
+  input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    margin-right: 8px;
+    flex-shrink: 0;
+    vertical-align: middle;
+  }
+  .divider {
+    border-top: 1px solid #ddd;
+    margin: 12px 0;
+  }
+  p {
+    font-size: 0.65em;
+    color: #666;
+    margin-top: 15px;
+    text-align: center;
+  }
+
+  @media (max-width: 600px) {
+    .outer-card {
+      padding: 30px 15px;
+      max-width: 95%;
+    }
+    .inner-card {
+      max-width: 100%;
+    }
+  }
 </style>
 </head>
 <body>
